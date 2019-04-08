@@ -11,12 +11,17 @@ import {MatCardModule} from '@angular/material/card';
 import { ChartistModule } from 'ng-chartist';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
 
 import { AppNavComponent } from './_layouts/app-nav/app-nav.component';
 import { AppContentComponent } from './_layouts/app-content/app-content.component';
 import { AppFooterComponent } from './_layouts/app-footer/app-footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsListComponent } from './products/products-list/products-list.component';
+import { ProductsNewComponent } from './products/products-new/products-new.component';
+import { ProductsEditComponent } from './products/products-edit/products-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import { ProductsListComponent } from './products/products-list/products-list.co
     AppContentComponent,
     AppFooterComponent,
     DashboardComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    ProductsNewComponent,
+    ProductsEditComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +44,10 @@ import { ProductsListComponent } from './products/products-list/products-list.co
     MatCardModule,
     ChartistModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
