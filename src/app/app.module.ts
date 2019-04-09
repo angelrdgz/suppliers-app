@@ -22,6 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsListComponent } from './products/products-list/products-list.component';
 import { ProductsNewComponent } from './products/products-new/products-new.component';
 import { ProductsEditComponent } from './products/products-edit/products-edit.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ProductsEditComponent } from './products/products-edit/products-edit.co
     DashboardComponent,
     ProductsListComponent,
     ProductsNewComponent,
-    ProductsEditComponent
+    ProductsEditComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

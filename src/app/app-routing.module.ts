@@ -6,6 +6,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsListComponent } from './products/products-list/products-list.component';
 import { ProductsNewComponent } from './products/products-new/products-new.component';
 import { ProductsEditComponent } from './products/products-edit/products-edit.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -20,6 +22,8 @@ const routes: Routes = [
 		{path: 'products/:id/edit', component:  ProductsEditComponent},
 	],
 },
+{path: '', component:  HomeComponent},
+{path: 'login', component:  LoginComponent},
 { path: '**', redirectTo: '' }
 
 ]
