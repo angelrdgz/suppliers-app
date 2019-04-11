@@ -28,6 +28,7 @@
             ],
             "styles": [
               "src/assets/scss/_feathericon.scss",
+              "src/assets/css/typicons.css",
               "node_modules/chartist/dist/chartist.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
