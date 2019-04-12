@@ -1,5 +1,8 @@
-.form-group{
-	mat-form-field{
-		width: 100%;
-	}
-}
+.mat-form-field{
+    width: 100% !important;
+    padding: 5px 20px;
+  }
+  .mat-raised-button{
+    display: block;
+    width: 100%;
+  }

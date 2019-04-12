@@ -17,18 +17,28 @@ nav{
 		font-family: 'Courgette', cursive;
 	}
 
-	ul{
-		list-style: none;
-		padding: 0;
-		float: right;
-		li{
-			display: inline-block;
-			a{
-				color: #fff;
-				text-decoration: none;
+	.menu{
+
+		ul{
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content:space-around;
+
+			li{
+				display: inline-block;
+				a{
+					color: #fff;
+					text-decoration: none;
+				}
 			}
 		}
+
 	}
+
+	
 }
 .home-header{
 	width: 100%;

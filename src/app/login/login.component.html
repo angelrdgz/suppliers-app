@@ -1,3 +1,145 @@
-<p>
-  login works!
-</p>
+<div class="container-login100">
+	<div class="login100-more"></div>
+
+	<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+		<div class="content">
+			<img src="assets/images/logo_color.png" alt="">
+			<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+				<mat-tab label="Ingresar">
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Email</mat-label>
+							<input matInput type="email" [(ngModel)]="user.email" placeholder="Email">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Contraseña</mat-label>
+							<input matInput type="password" [(ngModel)]="user.password" placeholder="Contraseña">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p style="padding: 5px 20px 20px;">
+						<button mat-raised-button color="primary" (click)="login()">Iniciar</button>
+					</p>
+					<p style="padding: 5px 20px 20px;" class="text-center">
+						<button mat-button color="primary">olvide mi contraseña</button>
+					</p>
+				</mat-tab>
+				<mat-tab label="Registrarme">
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Nombre</mat-label>
+							<input matInput type="text" placeholder="Nombre">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Email</mat-label>
+							<input matInput type="email" placeholder="Email">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Teléfono</mat-label>
+							<input matInput type="text" placeholder="Teléfono">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Contraseña</mat-label>
+							<input matInput type="password" placeholder="Contraseña">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field appearance="outline">
+							<mat-label>Confirmar Contraseña</mat-label>
+							<input matInput type="password" placeholder="Confirmar Contraseña">
+							<mat-hint></mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-checkbox
+					          class="example-margin">
+					        Acepto los terminos y condiciones de esta plataforma
+					      </mat-checkbox>
+					</p>
+					<p style="padding: 5px 20px 20px;">
+						<button mat-raised-button color="primary">Registrar</button>
+					</p>
+
+				</mat-tab>
+			</mat-tab-group>
+		</div>
+				<!--<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-59">
+						Sign Up
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Name is required">
+						<span class="label-input100">Full Name</span>
+						<input class="input100" type="text" name="name" placeholder="Name...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<span class="label-input100">Email</span>
+						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Username...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="text" name="pass" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
+						<span class="label-input100">Repeat Password</span>
+						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="flex-m w-full p-b-33">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								<span class="txt1">
+									I agree to the
+									<a href="#" class="txt2 hov1">
+										Terms of User
+									</a>
+								</span>
+							</label>
+						</div>
+
+						
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Sign Up
+							</button>
+						</div>
+
+						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+							Sign in
+							<i class="fa fa-long-arrow-right m-l-5"></i>
+						</a>
+					</div>
+				</form>-->
+			</div>
+		</div>

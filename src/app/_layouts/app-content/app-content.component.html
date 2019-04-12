@@ -45,7 +45,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a routerLink="sales">
 						<i class="fe fe-heart"></i> Sales
 					</a>
 				</li>
@@ -55,12 +55,12 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a routerLink="suppliers">
 						<i class="fe fe-users"></i> Suppliers
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a routerLink="orders">
 						<i class="fe fe-book"></i> Orders
 					</a>
 				</li>
@@ -70,9 +70,9 @@
 			<nav>
 				<div class="row">
 					<div class="col-sm-3">
-						<button type="button" class="d-none d-sm-block" mat-button (click)="drawer.toggle()">
+						<!--<button type="button" class="d-none d-sm-block" mat-button (click)="drawer.toggle()">
 							Toggle sidenav
-						</button>
+						</button>-->
 						<div class="position-relative has-icon-right">
 							<input class="form-control round" placeholder="Search" type="text">
 							<div class="form-control-position">
@@ -85,6 +85,25 @@
 							<li>
 								<button mat-icon-button [matMenuTriggerFor]="menux">
 									<mat-icon>settings</mat-icon>
+								</button>
+								<mat-menu #menux="matMenu" xPosition="before">
+									<button mat-menu-item>
+										<mat-icon>dialpad</mat-icon>
+										<span>Redial</span>
+									</button>
+									<button mat-menu-item disabled>
+										<mat-icon>voicemail</mat-icon>
+										<span>Check voicemail</span>
+									</button>
+									<button mat-menu-item>
+										<mat-icon>notifications_off</mat-icon>
+										<span>Disable alerts</span>
+									</button>
+								</mat-menu>
+							</li>
+							<li>
+								<button mat-icon-button [matMenuTriggerFor]="menux">
+									<mat-icon>notifications</mat-icon>
 								</button>
 								<mat-menu #menux="matMenu" xPosition="before">
 									<button mat-menu-item>
